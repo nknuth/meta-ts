@@ -7,7 +7,7 @@ IMAGE_INSTALL:append = " \
 	packagegroup-core-buildessential \
 	packagegroup-core-full-cmdline \
 	packagegroup-machine-base \
-	packagegroup-qt5-toolchain-target \
+	packagegroup-qt6-essentials \
 	alsa-utils-alsactl \
 	alsa-utils-alsamixer \
 	alsa-utils-amixer \
