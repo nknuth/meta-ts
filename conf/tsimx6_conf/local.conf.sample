@@ -34,7 +34,7 @@
 #MACHINE ?= "genericx86-64"
 #MACHINE ?= "edgerouter"
 #
-# This sets the default machine to be qemux86-64 if no other machine is selected:
+# This sets the default machine to be tsimx6 if no other machine is selected:
 MACHINE ??= "tsimx6"
 
 #
