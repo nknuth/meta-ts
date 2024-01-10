@@ -24,7 +24,7 @@ SRCREV = "e4f2aee6612e56c2a9a5da6131ccd80e57d5075b"
 LINUX_VERSION = "5.10.85"
 
 # Install SDMA firmware in kernel
-do_configure_prepend() {
+do_configure:prepend() {
    install -d ${S}/firmware/imx/sdma/ || die "could not make directory"
    install -m 644 ${STAGING_BASELIBDIR}/firmware/imx/sdma/sdma-imx6q.bin ${S}/firmware/imx/sdma/ || die "could not copy sdma firmware"
 }

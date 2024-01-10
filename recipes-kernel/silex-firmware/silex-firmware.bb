@@ -7,10 +7,10 @@ LICENSE = "Proprietary"
 LIC_FILES_CHKSUM = "file://${WORKDIR}/files/LICENSE.silex;md5=2b967ecddccf559405a6eb0d9035c397"
 
 SRC_URI = "file://files/"
-FILESEXTRAPATHS_prepend := "${THISDIR}/:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/:"
 
 #S = "${WORKDIR}"
-FILES_${PN} =  "/lib/firmware/*"
+FILES:${PN} =  "/lib/firmware/*"
 
 do_install() {
     install -d ${D}/lib/firmware/wlan

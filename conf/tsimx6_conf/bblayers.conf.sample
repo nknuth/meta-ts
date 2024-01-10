@@ -17,5 +17,5 @@ BBLAYERS ?= " \
   ##OEROOT##/../meta-openembedded/meta-gnome \
   ##OEROOT##/../meta-openembedded/meta-networking \
   ##OEROOT##/../meta-ts \
-  ##OEROOT##/../meta-qt5 \
+  ##OEROOT##/../meta-qt6 \
   "

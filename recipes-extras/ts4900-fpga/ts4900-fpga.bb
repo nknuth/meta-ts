@@ -7,13 +7,13 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 DEPENDS = ""
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/:"
 
 SRC_URI = "file://ts4900-fpga.bin"
 
 S = "${WORKDIR}"
 
-FILES_${PN} =  "/boot/*"
+FILES:${PN} =  "/boot/*"
 
 do_install() {
     install -d ${D}/boot/
