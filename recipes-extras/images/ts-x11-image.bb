@@ -2,6 +2,20 @@ SUMMARY = "TS X11 Image"
 
 IMAGE_FEATURES += "x11-base debug-tweaks package-management ssh-server-openssh tools-debug nfs-client qtcreator-debug tools-sdk"
 
+# Some of these packages have found new homes in
+#
+#  meta-imx/meta-sdk/dynamic-layers/qt6-layer/recipes-qt/examples
+#
+# ...however, adding that layer requires the NXP EULA to be signed.
+# Commenting these packages out for now.
+# 
+# 	cinematicexperience
+#	qt5-opengles2-test 
+#	qtquickcontrols-qmlplugins
+#	qtquickcontrols2
+# 	qtscript 
+#	qtwebkit
+
 IMAGE_INSTALL:append = " \
 	packagegroup-core-boot \
 	packagegroup-core-buildessential \
@@ -16,7 +30,6 @@ IMAGE_INSTALL:append = " \
 	bash-completion \
 	boost \
 	canutils \
-	cinematicexperience \
 	clutter-1.0-examples \
 	curl \
 	devmem2 \
@@ -62,7 +75,6 @@ IMAGE_INSTALL:append = " \
 	picocom \
 	ppp \
 	python3 \
-	qt5-opengles2-test \
 	qtbase \
 	qtbase-plugins \
 	qtbase-tools \
@@ -70,14 +82,10 @@ IMAGE_INSTALL:append = " \
 	qtmultimedia \
 	qtmultimedia-plugins \
 	qtmultimedia-qmlplugins \
-	qtquickcontrols-qmlplugins \
-	qtquickcontrols2 \
-	qtscript \
 	qtsensors \
 	qtserialbus \
 	qtserialport \
 	qtvirtualkeyboard \
-	qtwebkit \
 	rsync \
 	sqlite3 \
 	tcpdump \
